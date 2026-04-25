@@ -1,7 +1,7 @@
 import { supabase, isSupabaseConfigured } from '@/lib/supabase';
 
 export async function GET() {
-  if (!isSupabaseConfigured) {
+  if (!isSupabaseConfigured || !supabase) {
     return Response.json(
       { error: 'Supabase not configured' },
       { status: 500 }
