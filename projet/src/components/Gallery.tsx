@@ -158,7 +158,6 @@ NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET=votre_preset`}
         {isFullyConfigured ? (
           <CldUploadWidget
             uploadPreset={uploadPreset}
-            cloudName={cloudName}
             onSuccess={handleUploadSuccess}
           >
             {({ open }) => (
